@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A4CDBB91D12D66000E9BB23 /* NMRDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CDBB81D12D66000E9BB23 /* NMRDataSource.swift */; };
+		5A4CDBBE1D12DAAF00E9BB23 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4CDBBD1D12DAAF00E9BB23 /* Charts.framework */; };
+		5A4CDBC01D12DAB300E9BB23 /* SwiftCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4CDBBF1D12DAB300E9BB23 /* SwiftCSV.framework */; };
 		5AEE38261D10534C0093A900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE38251D10534C0093A900 /* AppDelegate.swift */; };
 		5AEE38281D10534C0093A900 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE38271D10534C0093A900 /* ViewController.swift */; };
 		5AEE382B1D10534C0093A900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEE38291D10534C0093A900 /* Main.storyboard */; };
@@ -14,6 +17,10 @@
 		5AEE38301D10534C0093A900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEE382E1D10534C0093A900 /* LaunchScreen.storyboard */; };
 		5AEE383B1D10534C0093A900 /* NMR_SpectraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE383A1D10534C0093A900 /* NMR_SpectraTests.swift */; };
 		5AEE38461D10534C0093A900 /* NMR_SpectraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE38451D10534C0093A900 /* NMR_SpectraUITests.swift */; };
+		5AEE38541D105D4F0093A900 /* Data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5AEE38531D105D4F0093A900 /* Data.csv */; };
+		935BAD344F7D443560375419 /* Pods_NMR_Spectra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5A3EEE0C911538C9954C91 /* Pods_NMR_Spectra.framework */; };
+		B18A69EFC3224AF66801B5D3 /* Pods_NMR_SpectraTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D1D2EE0E1BA892B3304C73A /* Pods_NMR_SpectraTests.framework */; };
+		EE7EDDC6EE75F4015828EC50 /* Pods_NMR_SpectraUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2579E375355A7AAB7E27546F /* Pods_NMR_SpectraUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2579E375355A7AAB7E27546F /* Pods_NMR_SpectraUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMR_SpectraUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1D2EE0E1BA892B3304C73A /* Pods_NMR_SpectraTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMR_SpectraTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B92E40907410E4F0461C64C /* Pods-NMR SpectraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMR SpectraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMR SpectraUITests/Pods-NMR SpectraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5A4CDBB81D12D66000E9BB23 /* NMRDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NMRDataSource.swift; sourceTree = "<group>"; };
+		5A4CDBBD1D12DAAF00E9BB23 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../../Library/Developer/Xcode/DerivedData/NMR_Spectra-fvauughstkiortbjwtcxjexejaib/Build/Products/Debug-iphonesimulator/Charts/Charts.framework"; sourceTree = "<group>"; };
+		5A4CDBBF1D12DAB300E9BB23 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCSV.framework; path = "../../../Library/Developer/Xcode/DerivedData/NMR_Spectra-fvauughstkiortbjwtcxjexejaib/Build/Products/Debug-iphonesimulator/SwiftCSV/SwiftCSV.framework"; sourceTree = "<group>"; };
+		5A5A3EEE0C911538C9954C91 /* Pods_NMR_Spectra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMR_Spectra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEE38221D10534C0093A900 /* NMR Spectra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NMR Spectra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEE38251D10534C0093A900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AEE38271D10534C0093A900 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,12 @@
 		5AEE38411D10534C0093A900 /* NMR SpectraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NMR SpectraUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AEE38451D10534C0093A900 /* NMR_SpectraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NMR_SpectraUITests.swift; sourceTree = "<group>"; };
 		5AEE38471D10534C0093A900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AEE38531D105D4F0093A900 /* Data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Data.csv; sourceTree = "<group>"; };
+		874C452F6DC1845DA91D05CA /* Pods-NMR Spectra.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMR Spectra.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMR Spectra/Pods-NMR Spectra.debug.xcconfig"; sourceTree = "<group>"; };
+		9FB632D6FC7F9618E0BF2D5A /* Pods-NMR SpectraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMR SpectraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMR SpectraUITests/Pods-NMR SpectraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3C4CD76A7369B69CBAD5C5E /* Pods-NMR Spectra.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMR Spectra.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMR Spectra/Pods-NMR Spectra.release.xcconfig"; sourceTree = "<group>"; };
+		ACE4E27E97C6D899645FE813 /* Pods-NMR SpectraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMR SpectraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NMR SpectraTests/Pods-NMR SpectraTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F750D47C3519787B307233FB /* Pods-NMR SpectraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NMR SpectraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NMR SpectraTests/Pods-NMR SpectraTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A4CDBC01D12DAB300E9BB23 /* SwiftCSV.framework in Frameworks */,
+				5A4CDBBE1D12DAAF00E9BB23 /* Charts.framework in Frameworks */,
+				935BAD344F7D443560375419 /* Pods_NMR_Spectra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18A69EFC3224AF66801B5D3 /* Pods_NMR_SpectraTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7EDDC6EE75F4015828EC50 /* Pods_NMR_SpectraUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,8 @@
 				5AEE38391D10534C0093A900 /* NMR SpectraTests */,
 				5AEE38441D10534C0093A900 /* NMR SpectraUITests */,
 				5AEE38231D10534C0093A900 /* Products */,
+				E61B433708E7256E3C3D781F /* Pods */,
+				9F51EFFE046316E09A81A83C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +124,14 @@
 		5AEE38241D10534C0093A900 /* NMR Spectra */ = {
 			isa = PBXGroup;
 			children = (
+				5AEE38531D105D4F0093A900 /* Data.csv */,
 				5AEE38251D10534C0093A900 /* AppDelegate.swift */,
 				5AEE38271D10534C0093A900 /* ViewController.swift */,
 				5AEE38291D10534C0093A900 /* Main.storyboard */,
 				5AEE382C1D10534C0093A900 /* Assets.xcassets */,
 				5AEE382E1D10534C0093A900 /* LaunchScreen.storyboard */,
 				5AEE38311D10534C0093A900 /* Info.plist */,
+				5A4CDBB81D12D66000E9BB23 /* NMRDataSource.swift */,
 			);
 			path = "NMR Spectra";
 			sourceTree = "<group>";
@@ -125,6 +154,31 @@
 			path = "NMR SpectraUITests";
 			sourceTree = "<group>";
 		};
+		9F51EFFE046316E09A81A83C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A4CDBBF1D12DAB300E9BB23 /* SwiftCSV.framework */,
+				5A4CDBBD1D12DAAF00E9BB23 /* Charts.framework */,
+				5A5A3EEE0C911538C9954C91 /* Pods_NMR_Spectra.framework */,
+				3D1D2EE0E1BA892B3304C73A /* Pods_NMR_SpectraTests.framework */,
+				2579E375355A7AAB7E27546F /* Pods_NMR_SpectraUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E61B433708E7256E3C3D781F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				874C452F6DC1845DA91D05CA /* Pods-NMR Spectra.debug.xcconfig */,
+				A3C4CD76A7369B69CBAD5C5E /* Pods-NMR Spectra.release.xcconfig */,
+				ACE4E27E97C6D899645FE813 /* Pods-NMR SpectraTests.debug.xcconfig */,
+				F750D47C3519787B307233FB /* Pods-NMR SpectraTests.release.xcconfig */,
+				9FB632D6FC7F9618E0BF2D5A /* Pods-NMR SpectraUITests.debug.xcconfig */,
+				4B92E40907410E4F0461C64C /* Pods-NMR SpectraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AEE384A1D10534C0093A900 /* Build configuration list for PBXNativeTarget "NMR Spectra" */;
 			buildPhases = (
+				D74F0F1FFB56B1009B342327 /* [CP] Check Pods Manifest.lock */,
 				5AEE381E1D10534B0093A900 /* Sources */,
 				5AEE381F1D10534B0093A900 /* Frameworks */,
 				5AEE38201D10534B0093A900 /* Resources */,
+				E54146F701BCC09C9CB7B299 /* [CP] Embed Pods Frameworks */,
+				BA4DDE8C02B2885CE5770FA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AEE384D1D10534C0093A900 /* Build configuration list for PBXNativeTarget "NMR SpectraTests" */;
 			buildPhases = (
+				575E0BCBF4CDFADB52D86DDE /* [CP] Check Pods Manifest.lock */,
 				5AEE38321D10534C0093A900 /* Sources */,
 				5AEE38331D10534C0093A900 /* Frameworks */,
 				5AEE38341D10534C0093A900 /* Resources */,
+				65C3372CCE5C573ADF8C3DC5 /* [CP] Embed Pods Frameworks */,
+				D7578D93AEFCE11A5CD9FE67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AEE38501D10534C0093A900 /* Build configuration list for PBXNativeTarget "NMR SpectraUITests" */;
 			buildPhases = (
+				0753E78D9B8894BAD7DFDEFD /* [CP] Check Pods Manifest.lock */,
 				5AEE383D1D10534C0093A900 /* Sources */,
 				5AEE383E1D10534C0093A900 /* Frameworks */,
 				5AEE383F1D10534C0093A900 /* Resources */,
+				DF6A3718CE78DD0F66CBE16C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEE38541D105D4F0093A900 /* Data.csv in Resources */,
 				5AEE38301D10534C0093A900 /* LaunchScreen.storyboard in Resources */,
 				5AEE382D1D10534C0093A900 /* Assets.xcassets in Resources */,
 				5AEE382B1D10534C0093A900 /* Main.storyboard in Resources */,
@@ -251,6 +314,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0753E78D9B8894BAD7DFDEFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		575E0BCBF4CDFADB52D86DDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65C3372CCE5C573ADF8C3DC5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMR SpectraTests/Pods-NMR SpectraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA4DDE8C02B2885CE5770FA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMR Spectra/Pods-NMR Spectra-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D74F0F1FFB56B1009B342327 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7578D93AEFCE11A5CD9FE67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMR SpectraTests/Pods-NMR SpectraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF6A3718CE78DD0F66CBE16C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMR SpectraUITests/Pods-NMR SpectraUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E54146F701BCC09C9CB7B299 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NMR Spectra/Pods-NMR Spectra-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5AEE381E1D10534B0093A900 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +444,7 @@
 			files = (
 				5AEE38281D10534C0093A900 /* ViewController.swift in Sources */,
 				5AEE38261D10534C0093A900 /* AppDelegate.swift in Sources */,
+				5A4CDBB91D12D66000E9BB23 /* NMRDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +586,7 @@
 		};
 		5AEE384B1D10534C0093A900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874C452F6DC1845DA91D05CA /* Pods-NMR Spectra.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "NMR Spectra/Info.plist";
@@ -410,6 +598,7 @@
 		};
 		5AEE384C1D10534C0093A900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C4CD76A7369B69CBAD5C5E /* Pods-NMR Spectra.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "NMR Spectra/Info.plist";
@@ -421,6 +610,7 @@
 		};
 		5AEE384E1D10534C0093A900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE4E27E97C6D899645FE813 /* Pods-NMR SpectraTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "NMR SpectraTests/Info.plist";
@@ -433,6 +623,7 @@
 		};
 		5AEE384F1D10534C0093A900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F750D47C3519787B307233FB /* Pods-NMR SpectraTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "NMR SpectraTests/Info.plist";
@@ -445,6 +636,7 @@
 		};
 		5AEE38511D10534C0093A900 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FB632D6FC7F9618E0BF2D5A /* Pods-NMR SpectraUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "NMR SpectraUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +648,7 @@
 		};
 		5AEE38521D10534C0093A900 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B92E40907410E4F0461C64C /* Pods-NMR SpectraUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "NMR SpectraUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +677,7 @@
 				5AEE384C1D10534C0093A900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AEE384D1D10534C0093A900 /* Build configuration list for PBXNativeTarget "NMR SpectraTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +686,7 @@
 				5AEE384F1D10534C0093A900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AEE38501D10534C0093A900 /* Build configuration list for PBXNativeTarget "NMR SpectraUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +695,7 @@
 				5AEE38521D10534C0093A900 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
