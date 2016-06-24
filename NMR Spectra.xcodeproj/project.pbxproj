@@ -99,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A3128071D1D798400B1614B /* datasources */ = {
+			isa = PBXGroup;
+			children = (
+				5A4CDBB81D12D66000E9BB23 /* NMRDataSource.swift */,
+				5AEE38531D105D4F0093A900 /* Data.csv */,
+			);
+			name = datasources;
+			sourceTree = "<group>";
+		};
 		5AEE38191D10534B0093A900 = {
 			isa = PBXGroup;
 			children = (
@@ -124,14 +133,13 @@
 		5AEE38241D10534C0093A900 /* NMR Spectra */ = {
 			isa = PBXGroup;
 			children = (
-				5AEE38531D105D4F0093A900 /* Data.csv */,
+				5A3128071D1D798400B1614B /* datasources */,
 				5AEE38251D10534C0093A900 /* AppDelegate.swift */,
 				5AEE38271D10534C0093A900 /* ViewController.swift */,
 				5AEE38291D10534C0093A900 /* Main.storyboard */,
 				5AEE382C1D10534C0093A900 /* Assets.xcassets */,
 				5AEE382E1D10534C0093A900 /* LaunchScreen.storyboard */,
 				5AEE38311D10534C0093A900 /* Info.plist */,
-				5A4CDBB81D12D66000E9BB23 /* NMRDataSource.swift */,
 			);
 			path = "NMR Spectra";
 			sourceTree = "<group>";
