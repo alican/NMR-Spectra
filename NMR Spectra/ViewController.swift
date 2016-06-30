@@ -49,6 +49,8 @@ class ViewController: UIViewController, ChartViewDelegate {
     var dataSource = NMRDataSource()
     var dataSets : [LineChartDataSet] = [LineChartDataSet]()
     
+    var molName : String?
+    
     var nightMode:Bool = false
     
     let colors:[UIColor] = [
@@ -77,13 +79,20 @@ class ViewController: UIViewController, ChartViewDelegate {
         }
         
     }
+    @IBAction func AddMol(sender: UIBarButtonItem) {
+        if let mol = dataSource.getMolecule("EthylAcetate2"){
+            self.molecule = mol
+            setChartData(molecule)
+        }
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     
         self.lineChartView.delegate = self
 
-        if let mol = dataSource.getMolecule("EthylAcetate"){
+        if let mol = dataSource.getMolecule(molName!){
             self.molecule = mol
             setChartData(molecule)
             let molView = NSBundle.mainBundle().loadNibNamed("EthylAcetate", owner: self, options: nil).first as! UIView
@@ -180,9 +189,6 @@ class ViewController: UIViewController, ChartViewDelegate {
         
         //3 - create an array to store our LineChartDataSets
         dataSets.append(dataSet)
-        
-        
-      
         
         
         

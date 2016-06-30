@@ -3,22 +3,23 @@
     <dependencies>
         <deployment version="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NMR_Spectra" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MolViewC" id="BYZ-38-t0r" customClass="ViewController" customModule="NMR_Spectra" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhn-ft-ute" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FV8-ko-hrG">
                                         <rect key="frame" x="28" y="40" width="240" height="128"/>
@@ -33,30 +34,42 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="qhn-ft-ute" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="174-LX-Zad"/>
                             <constraint firstItem="qhn-ft-ute" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GmL-2N-Lmw"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qhn-ft-ute" secondAttribute="bottom" id="c6U-4K-Kc9"/>
                             <constraint firstAttribute="trailing" secondItem="qhn-ft-ute" secondAttribute="trailing" id="cLz-w9-fIF"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mYT-bi-awu" appends="YES" id="fhT-7t-9gn"/>
+                            <outletCollection property="gestureRecognizers" destination="t7u-A8-1wF" appends="YES" id="jEZ-8N-3yg"/>
+                        </connections>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="ZvU-4f-sBV">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="xhr-mv-o0H">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OvZ-rW-vg6">
-                                <rect key="frame" x="505" y="11" width="75" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Theme">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                        <rightBarButtonItems>
+                            <barButtonItem id="xhr-mv-o0H">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OvZ-rW-vg6">
+                                    <rect key="frame" x="505" y="11" width="75" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Theme">
+                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="changeTheme2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjH-Rw-fAg"/>
+                                    </connections>
+                                </button>
                                 <connections>
-                                    <action selector="changeTheme2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjH-Rw-fAg"/>
+                                    <action selector="changeTheme:" destination="BYZ-38-t0r" id="Y5Y-ho-ryH"/>
                                 </connections>
-                            </button>
-                            <connections>
-                                <action selector="changeTheme:" destination="BYZ-38-t0r" id="Y5Y-ho-ryH"/>
-                            </connections>
-                        </barButtonItem>
+                            </barButtonItem>
+                            <barButtonItem title="Compare" id="g1G-At-43V" userLabel="Add">
+                                <connections>
+                                    <action selector="AddMol:" destination="BYZ-38-t0r" id="iC7-sa-Jbt"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="lineChartView" destination="qhn-ft-ute" id="KOy-lM-Cqa"/>
@@ -71,7 +84,39 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1302" y="397"/>
+            <point key="canvasLocation" x="1279" y="444"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="n6s-1r-Feh">
+            <objects>
+                <tableViewController id="lW2-p5-dSf" customClass="TableViewController" customModule="NMR_Spectra" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="M3W-8E-zKc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="YVd-Mm-fnq">
+                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YVd-Mm-fnq" id="d0I-mF-7oK">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lW2-p5-dSf" id="OWh-o7-sej"/>
+                            <outlet property="delegate" destination="lW2-p5-dSf" id="Qfg-oh-gTr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="9Es-j9-G51"/>
+                    <connections>
+                        <outlet property="MulTableView" destination="M3W-8E-zKc" id="L3q-cE-r2U"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8e-cQ-jPy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="-251"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HDV-o6-AAc">
@@ -84,12 +129,13 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ytA-ed-hhx"/>
+                        <segue destination="lW2-p5-dSf" kind="relationship" relationship="rootViewController" id="JHQ-gU-qAL"/>
+                        <segue destination="BYZ-38-t0r" kind="custom" id="YgJ-I3-iEA"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ob5-Aj-3Xt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="490" y="397"/>
+            <point key="canvasLocation" x="434" y="317"/>
         </scene>
     </scenes>
 </document>

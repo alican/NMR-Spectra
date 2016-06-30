@@ -10,6 +10,11 @@
 		5A4CDBB91D12D66000E9BB23 /* NMRDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4CDBB81D12D66000E9BB23 /* NMRDataSource.swift */; };
 		5A4CDBBE1D12DAAF00E9BB23 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4CDBBD1D12DAAF00E9BB23 /* Charts.framework */; };
 		5A4CDBC01D12DAB300E9BB23 /* SwiftCSV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4CDBBF1D12DAB300E9BB23 /* SwiftCSV.framework */; };
+		5AE314B81D2559E600E62767 /* MolEntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AE314B71D2559E600E62767 /* MolEntryCell.xib */; };
+		5AE314BA1D255AF200E62767 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE314B91D255AF200E62767 /* TableViewController.swift */; };
+		5AE314BC1D255E5300E62767 /* MolTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE314BB1D255E5300E62767 /* MolTableViewCell.swift */; };
+		5AE314BE1D25670400E62767 /* EthylAcetate2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AE314BD1D25670400E62767 /* EthylAcetate2.png */; };
+		5AE314C01D25697600E62767 /* EthylAcetate2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5AE314BF1D25697600E62767 /* EthylAcetate2.csv */; };
 		5AEC47921D207A3000999C6E /* EthylAcetate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AEC47911D207A3000999C6E /* EthylAcetate.xib */; };
 		5AEC47951D20A5E200999C6E /* Molecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEC47941D20A5E200999C6E /* Molecule.swift */; };
 		5AEE38261D10534C0093A900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEE38251D10534C0093A900 /* AppDelegate.swift */; };
@@ -51,6 +56,11 @@
 		5A4CDBBD1D12DAAF00E9BB23 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "../../../Library/Developer/Xcode/DerivedData/NMR_Spectra-fvauughstkiortbjwtcxjexejaib/Build/Products/Debug-iphonesimulator/Charts/Charts.framework"; sourceTree = "<group>"; };
 		5A4CDBBF1D12DAB300E9BB23 /* SwiftCSV.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCSV.framework; path = "../../../Library/Developer/Xcode/DerivedData/NMR_Spectra-fvauughstkiortbjwtcxjexejaib/Build/Products/Debug-iphonesimulator/SwiftCSV/SwiftCSV.framework"; sourceTree = "<group>"; };
 		5A5A3EEE0C911538C9954C91 /* Pods_NMR_Spectra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NMR_Spectra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE314B71D2559E600E62767 /* MolEntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MolEntryCell.xib; sourceTree = "<group>"; };
+		5AE314B91D255AF200E62767 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5AE314BB1D255E5300E62767 /* MolTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MolTableViewCell.swift; sourceTree = "<group>"; };
+		5AE314BD1D25670400E62767 /* EthylAcetate2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EthylAcetate2.png; sourceTree = "<group>"; };
+		5AE314BF1D25697600E62767 /* EthylAcetate2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EthylAcetate2.csv; sourceTree = "<group>"; };
 		5AEC47911D207A3000999C6E /* EthylAcetate.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EthylAcetate.xib; sourceTree = "<group>"; };
 		5AEC47941D20A5E200999C6E /* Molecule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Molecule.swift; sourceTree = "<group>"; };
 		5AEE38221D10534C0093A900 /* NMR Spectra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NMR Spectra.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +118,7 @@
 		5A3128071D1D798400B1614B /* datasources */ = {
 			isa = PBXGroup;
 			children = (
+				5AE314BF1D25697600E62767 /* EthylAcetate2.csv */,
 				5AEE38531D105D4F0093A900 /* EthylAcetate.csv */,
 				5A4CDBB81D12D66000E9BB23 /* NMRDataSource.swift */,
 			);
@@ -161,6 +172,9 @@
 				5A3128071D1D798400B1614B /* datasources */,
 				5AEE38251D10534C0093A900 /* AppDelegate.swift */,
 				5AEE38271D10534C0093A900 /* ViewController.swift */,
+				5AE314B91D255AF200E62767 /* TableViewController.swift */,
+				5AE314B71D2559E600E62767 /* MolEntryCell.xib */,
+				5AE314BB1D255E5300E62767 /* MolTableViewCell.swift */,
 				5AEE38291D10534C0093A900 /* Main.storyboard */,
 				5AEE382C1D10534C0093A900 /* Assets.xcassets */,
 				5AEE382E1D10534C0093A900 /* LaunchScreen.storyboard */,
@@ -190,6 +204,7 @@
 		5AEF3B581D1FF7AB00BFDF28 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5AE314BD1D25670400E62767 /* EthylAcetate2.png */,
 				5AEF3B591D1FF7D100BFDF28 /* EthylAcetate.png */,
 			);
 			name = images;
@@ -335,6 +350,9 @@
 			files = (
 				5AEC47921D207A3000999C6E /* EthylAcetate.xib in Resources */,
 				5AEF3B5A1D1FF7D100BFDF28 /* EthylAcetate.png in Resources */,
+				5AE314C01D25697600E62767 /* EthylAcetate2.csv in Resources */,
+				5AE314B81D2559E600E62767 /* MolEntryCell.xib in Resources */,
+				5AE314BE1D25670400E62767 /* EthylAcetate2.png in Resources */,
 				5AEE38541D105D4F0093A900 /* EthylAcetate.csv in Resources */,
 				5AEE38301D10534C0093A900 /* LaunchScreen.storyboard in Resources */,
 				5AEE382D1D10534C0093A900 /* Assets.xcassets in Resources */,
@@ -486,9 +504,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AE314BC1D255E5300E62767 /* MolTableViewCell.swift in Sources */,
 				5AEE38281D10534C0093A900 /* ViewController.swift in Sources */,
 				5AEE38261D10534C0093A900 /* AppDelegate.swift in Sources */,
 				5A4CDBB91D12D66000E9BB23 /* NMRDataSource.swift in Sources */,
+				5AE314BA1D255AF200E62767 /* TableViewController.swift in Sources */,
 				5AEC47951D20A5E200999C6E /* Molecule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
