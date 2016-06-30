@@ -39,6 +39,8 @@ extension Array {
     }
 }
 
+
+
 class ViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var moleculePlaceholder: UIView!
@@ -46,6 +48,8 @@ class ViewController: UIViewController, ChartViewDelegate {
     var molecule: Molecule!
     var dataSource = NMRDataSource()
     var dataSets : [LineChartDataSet] = [LineChartDataSet]()
+    
+    var nightMode:Bool = false
     
     let colors:[UIColor] = [
         UIColor.orangeColor(),
@@ -60,6 +64,19 @@ class ViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var lineChartView: LineChartView!
 
 
+    @IBAction func changeTheme(sender: UIBarButtonItem) {
+        print("Theme")
+    }
+    @IBAction func changeTheme2(sender: UIButton) {
+        print("Theme2")
+        nightMode = !nightMode
+        if (nightMode){
+        self.lineChartView.backgroundColor = UIColor.blackColor()
+        }else{
+        self.lineChartView.backgroundColor = UIColor.whiteColor()
+        }
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

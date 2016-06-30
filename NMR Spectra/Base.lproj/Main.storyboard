@@ -41,7 +41,23 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="ZvU-4f-sBV"/>
+                    <navigationItem key="navigationItem" id="ZvU-4f-sBV">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xhr-mv-o0H">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="OvZ-rW-vg6">
+                                <rect key="frame" x="505" y="11" width="75" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Theme">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeTheme2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IjH-Rw-fAg"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="changeTheme:" destination="BYZ-38-t0r" id="Y5Y-ho-ryH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lineChartView" destination="qhn-ft-ute" id="KOy-lM-Cqa"/>
                         <outlet property="moleculePlaceholder" destination="FV8-ko-hrG" id="Mcu-Rk-al8"/>
